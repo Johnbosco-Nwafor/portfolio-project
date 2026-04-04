@@ -9,7 +9,7 @@ const Footer = () => {
             <p className='text-lg text-white font-semibold'>Address XYZ ST 128, IN</p>
 
             <div className='flex flex-col md:flex-row  gap-6 text-white'>
-                <a href="/">Home</a>
+                <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#project">Project</a>
             </div>

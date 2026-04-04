@@ -30,7 +30,7 @@ function App() {
       />
 
       <div className='bg-white relative dark:bg-[#05174e]'>
-        <div className='px-5 md:px-15 pt-40 py-6'>
+        <div className='px-5 md:px-15 pt-40 py-6' id='home'>
           <Header />
         </div>
       </div>

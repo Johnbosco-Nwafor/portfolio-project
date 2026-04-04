@@ -7,7 +7,7 @@ import { RiCloseLargeLine } from "react-icons/ri";
 const links = [
   { name: "Home", path: "#home" },
   { name: "About", path: "#about" },
-  { name: "Projects", path: "#projects" }
+  { name: "Projects", path: "#project" }
 ]
 
 const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
