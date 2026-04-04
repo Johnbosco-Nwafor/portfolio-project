@@ -4,7 +4,11 @@ import { WiMoonAltFirstQuarter } from "react-icons/wi";
 import { FiMenu } from "react-icons/fi";
 import { RiCloseLargeLine } from "react-icons/ri";
 
-const links = ["Home", "About", "Project"]
+const links = [
+  { name: "Home", path: "#home" },
+  { name: "About", path: "#about" },
+  { name: "Projects", path: "#projects" }
+]
 
 const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
   const [selected, setSelected] = useState(0)
@@ -23,7 +27,7 @@ const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
               className={`${selected === index ? "bg-[#05174e] dark:bg-[#061130] text-white" : "text-slate-700 dark:text-slate-200"} px-5 py-2 rounded-full`}
               onClick={()=> setSelected(index)}
               >
-                <a href="#">{items}</a>
+                <a href={items.path}>{items.name}</a>
               </div>
             ))
           }
@@ -58,7 +62,7 @@ const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
              className={`${selected === index ? "bg-[#05174e] dark:bg-[#061130] text-white" : "text-slate-700 dark:text-slate-200"} px-5 py-2 rounded-lg cursor-pointer`}
              onClick={()=> setSelected(index)}
             >
-              <a href="#" onClick={toggleMenu}>{items}</a>
+              <a href={items.path} onClick={toggleMenu}>{items.name}</a>
             </div>
           ))
         }
