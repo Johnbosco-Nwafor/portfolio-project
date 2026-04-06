@@ -36,7 +36,7 @@ const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
         <div className='flex flex-row justify-center items-center gap-4'>
           <button onClick={toggleTheme} className='cursor-pointer'>
             {
-              darkMode ? (<LuSun size={24} color='white'/>) : <WiMoonAltFirstQuarter size={24} color='black'/>
+              darkMode ? (<LuSun size={28} color='white'/>) : <WiMoonAltFirstQuarter size={28} color='black'/>
             }
           </button>
 
