@@ -14,7 +14,7 @@ const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
   const [selected, setSelected] = useState(0)
 
   return (
-    <div className='w-full fixed top-0 left-0 z-50 dark:bg-[#05174e] bg-white px-5 md:px-10 border-b border-slate-200 dark:border-0 shadow-lg'>
+    <div className='w-full fixed top-0 left-0 z-50 dark:bg-[#05174e] bg-white px-5 md:px-10 border-b border-slate-200 dark:border-0 shadow-lg pb-2'>
       <div className='flex flex-row items-center justify-between py-6'>
         <a href="/" className='text-2xl font-bold text-blue-700'>CodeDevs</a>
 
@@ -33,13 +33,14 @@ const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
           }
         </div>
 
-        <button onClick={toggleTheme} className='cursor-pointer'>
-          {
-            darkMode ? (<LuSun size={24} color='white'/>) : <WiMoonAltFirstQuarter size={24} color='black'/>
-          }
-        </button>
+        <div className='flex flex-row justify-center items-center gap-4'>
+          <button onClick={toggleTheme} className='cursor-pointer'>
+            {
+              darkMode ? (<LuSun size={24} color='white'/>) : <WiMoonAltFirstQuarter size={24} color='black'/>
+            }
+          </button>
 
-        <div className='md:hidden'>
+          <div className='md:hidden'>
           <button
           type='button'
           aria-expanded="false"
@@ -47,10 +48,11 @@ const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
           className='cursor-pointer'
           onClick={toggleMenu}
           >
-            <FiMenu className={`${isMenu ? "block" : "hidden"} text-black dark:text-slate-200`} size={26}
+            <FiMenu className={`${isMenu ? "block" : "hidden"} text-black dark:text-slate-200`} size={28}
             />
-            <RiCloseLargeLine className={`${isMenu ? "hidden" : "block"} text-black dark:text-slate-200`} size={26}/>
+            <RiCloseLargeLine className={`${isMenu ? "hidden" : "block"} text-black dark:text-slate-200`} size={28}/>
           </button>
+        </div>
         </div>
       </div>
 

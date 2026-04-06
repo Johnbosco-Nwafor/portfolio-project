@@ -31,10 +31,10 @@ const Header = () => {
             <img src={profile} className='w-auto h-full absolute -top-5'/>
 
             <div className='w-full h-full relative rounded-full'>
-                <img src={react} className='absolute h-15 w-15 md:h-20 md:w-20 top-12 left-5'/>
-                <img src={mongoDb} className='absolute h-15 w-15 md:h-20 md:w-20 top-12 right-5'/>
-                <img src={redux} className='absolute h-15 w-15 md:h-20 md:w-20 bottom-12 left-5'/>
-                <img src={javascript} className='absolute h-15 w-15 md:h-20 md:w-20 bottom-12 right-5'/>
+                <img src={react} className='absolute h-15 w-15 md:h-20 md:w-20 md:top-12 top-8 md:left-5'/>
+                <img src={mongoDb} className='absolute h-15 w-15 md:h-20 md:w-20 top-8 md:top-12  right-2 md:right-5'/>
+                <img src={redux} className='absolute h-15 w-15 md:h-20 md:w-20 bottom-8 md:bottom-12 left-5'/>
+                <img src={javascript} className='absolute h-15 w-15 md:h-20 md:w-20 md:bottom-12 bottom-8 right-5'/>
             </div>
         </div>
     </div>
