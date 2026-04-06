@@ -61,7 +61,7 @@ const Navbar = ({darkMode, isMenu, toggleTheme, toggleMenu}) => {
           links.map((items, index)=>(
             <div
              key={index}
-             className={`${selected === index ? "bg-[#05174e] dark:bg-[#061130] text-white" : "text-slate-700 dark:text-slate-200"} px-5 py-2 rounded-lg cursor-pointer`}
+             className={`${selected === index ? "bg-[#05174e] dark:bg-[#061130] text-white" : "text-slate-700 dark:text-slate-200"} px-3 py-2 rounded-lg cursor-pointer`}
              onClick={()=> setSelected(index)}
             >
               <a href={items.path} onClick={toggleMenu}>{items.name}</a>
